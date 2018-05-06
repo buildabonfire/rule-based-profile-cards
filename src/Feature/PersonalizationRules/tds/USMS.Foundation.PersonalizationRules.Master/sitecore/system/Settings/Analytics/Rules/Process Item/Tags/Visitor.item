@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {4F188F6D-9055-4E27-9B91-F1562342CDF4}
+database: master
+path: /sitecore/system/Settings/Analytics/Rules/Process Item/Tags/Visitor
+parent: {F939E351-BBFF-4516-A629-01B819411E45}
+name: Visitor
+master: {00000000-0000-0000-0000-000000000000}
+template: {854BA861-63EA-4A0C-8C7B-541E9A7EC4C1}
+templatekey: Tags Definition
+created: 20180506T023338Z
+
+----field----
+field: {42F77151-098F-496A-94CF-590B7EDEEABE}
+name: Tags
+key: tags
+content-length: 77
+
+{F1933AAE-5AC3-4F86-BFEB-3F0C49E39749}|{6084975A-488E-43ED-BE36-3765A5971DD7}
+----version----
+language: en
+version: 1
+revision: cd2f5d6b-4a73-4343-892c-e971cfefb2d7
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180207T194006Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cd2f5d6b-4a73-4343-892c-e971cfefb2d7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180506T023349Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
