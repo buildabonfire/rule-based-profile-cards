@@ -19,6 +19,9 @@
     <ManageRoles>False</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
+    <SourceWebVirtualPath>/Sitecore.Feature.PersonalizationRules.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{b53390e9-3039-40a9-93d3-12326e931bcf}|src\Feature\PersonalizationRules\code\Sitecore.Feature.PersonalizationRules.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\..\code</SourceWebPhysicalPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +33,16 @@
     <DisableFileDeployment>False</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>
     <SitecoreAccessGuid>b94cba16-b5d4-47bc-b3dd-0d6e45d205b5</SitecoreAccessGuid>
+    <PackageName>Sitecore.PersonalizationRules</PackageName>
+    <PackageAuthor />
+    <PackagePublisher />
+    <PackageVersion />
+    <PackageReadme />
+    <SitecoreAssemblyPath />
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -170,18 +183,6 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-  </ItemGroup>
-  <ItemGroup>
-    <SourceWebProjects Include="{b53390e9-3039-40a9-93d3-12326e931bcf}|src\Feature\PersonalizationRules\code\Sitecore.Feature.PersonalizationRules.csproj">
-      <SourceWebPhysicalPath>..\..\code</SourceWebPhysicalPath>
-      <SourceWebVirtualPath>/Sitecore.Feature.PersonalizationRules.csproj</SourceWebVirtualPath>
-      <SourceWebProjectId>b53390e9-3039-40a9-93d3-12326e931bcf</SourceWebProjectId>
-    </SourceWebProjects>
-    <SourceWebProjects Include="{b53390e9-3039-40a9-93d3-12326e931bcf}|src\Foundation\PersonalizationRules\code\USMS.Foundation.PersonalizationRules.csproj">
-      <SourceWebPhysicalPath>..\..\code</SourceWebPhysicalPath>
-      <SourceWebVirtualPath>/Sitecore.Feature.PersonalizationRules.csproj</SourceWebVirtualPath>
-      <SourceWebProjectId>b53390e9-3039-40a9-93d3-12326e931bcf</SourceWebProjectId>
-    </SourceWebProjects>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\code\Sitecore.Feature.PersonalizationRules.csproj">
