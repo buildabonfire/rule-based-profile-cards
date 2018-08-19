@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Xml.Linq;
 using Sitecore.Data.Items;
+using Sitecore.Data;
 using Sitecore.Diagnostics;
 using Sitecore.Marketing.Definitions.Profiles;
 using Sitecore.Rules.RuleMacros;
@@ -30,8 +31,8 @@ namespace Sitecore.Feature.PersonalizationRules.Rules.RulesMacro
                 if (obj2 != null)
                     selectItemOptions.FilterItem = obj2;
             }
-            selectItemOptions.Root = Client.ContentDatabase.GetItem(WellKnownIdentifiers.ProfilesContainerId);
-            selectItemOptions.SelectedItem = obj1 ?? (selectItemOptions.Root != null ? selectItemOptions.Root.Children.FirstOrDefault<Item>() : (Item)null);
+            selectItemOptions.Root = Client.ContentDatabase.GetItem(new ID(WellKnownIdentifiers.ProfilesContainerId));
+            selectItemOptions.SelectedItem = obj1 ?? (selectItemOptions.Root != null ? selectItemOptions.Root.Children.FirstOrDefault() : null);
             selectItemOptions.IncludeTemplatesForSelection = SelectItemOptions.GetTemplateList("{0FC09EA4-8D87-4B0E-A5C9-8076AE863D9C}");
             selectItemOptions.Title = "Select Profile Card";
             selectItemOptions.Text = "Select the profile card to use in this rule.";
