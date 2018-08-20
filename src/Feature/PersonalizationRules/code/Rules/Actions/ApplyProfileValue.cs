@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Xml.Linq;
 using Sitecore.Analytics;
 using Sitecore.Analytics.Data;
 using Sitecore.Data.Items;
@@ -23,9 +25,9 @@ namespace Sitecore.Feature.PersonalizationRules.Rules.Actions
         /// <param name="ruleContext">The rule context.</param>
         public override void Apply(T ruleContext)
         {
-            Assert.ArgumentNotNull((object)ruleContext, "ruleContext");
+            Assert.ArgumentNotNull(ruleContext, "ruleContext");
             var ruleItem = ruleContext.Item;
-            var profile = ruleItem?.Database.GetItem(this.Profilecardkey);
+            var profile = ruleItem?.Database.GetItem(Profilecardkey);
             if (profile == null)
                 return;
 
