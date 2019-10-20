@@ -22,14 +22,14 @@ content-length: 464
       <condition id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}" uid="B9BF8DEE5D194653AFE09DDA8B138BE5" itemid="{25DC062A-23FB-48E4-A93F-C20080C823BD}" />
     </conditions>
     <actions>
-      <action id="{7EA54031-BD6B-467B-BBBC-0674D086E275}" uid="BEC7E05F73314EDCBF485F7A536717D3" profilecardkey="{BBB8E16F-4D7B-4883-9415-7024B1CA33AF}" />
+      <action id="{7EA54031-BD6B-467B-BBBC-0674D086E275}" uid="BEC7E05F73314EDCBF485F7A536717D3" profilecardkey="{59B969AF-68A9-4F23-9E79-F693CF86185B}" />
     </actions>
   </rule>
 </ruleset>
 ----version----
 language: en
 version: 1
-revision: 6d3b745a-4fe3-4112-a6fd-409f87c10cd4
+revision: 84efe212-c0cf-4f0d-9005-2a17ac4140fc
 
 ----field----
 field: {45CF9130-802A-41BE-B3EB-C02F657DCC2E}
@@ -51,18 +51,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6d3b745a-4fe3-4112-a6fd-409f87c10cd4
+84efe212-c0cf-4f0d-9005-2a17ac4140fc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180506T134833Z
+20191020T183242Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
 content-length: 14
 
-sitecore\admin
+sitecore\Admin

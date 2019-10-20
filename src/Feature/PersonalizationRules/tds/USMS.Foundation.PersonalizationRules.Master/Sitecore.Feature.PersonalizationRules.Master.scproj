@@ -39,7 +39,7 @@
     <PackageVersion />
     <PackageReadme />
     <SitecoreAssemblyPath />
-    <GeneratePackage>True</GeneratePackage>
+    <GeneratePackage>False</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
@@ -75,18 +75,18 @@
   <ItemGroup>
     <SitecoreItem Include="sitecore\system.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings.item">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Analytics.item">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Analytics\Rules.item">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Analytics\Rules\Process Item.item">
@@ -120,15 +120,15 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Rules.item">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions.item">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements.item">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Profile.item">
@@ -147,10 +147,6 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Profile\Trigger Goal.item">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Profile\Visibility.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
@@ -164,7 +160,7 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Macros.item">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Macros\ProfileCard.item">

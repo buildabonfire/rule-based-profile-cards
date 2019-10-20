@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {59B969AF-68A9-4F23-9E79-F693CF86185B}
+database: master
+path: /sitecore/system/Marketing Control Panel/Profiles/Persona/Profile Cards/Cecile
+parent: {1E63C9F9-67BF-45BF-98AE-4BC4F12AF819}
+name: Cecile
+master: {00000000-0000-0000-0000-000000000000}
+template: {0FC09EA4-8D87-4B0E-A5C9-8076AE863D9C}
+templatekey: Profile Card
+created: 20191020T182957Z
+
+----field----
+field: {85970AB7-22EA-4206-BE86-C0167178860B}
+name: Profile Card Value
+key: profile card value
+content-length: 251
+
+<tracking>
+  <profile id="b5bdee45-c945-476f-9ee6-3b8a9255c17e" name="Persona">
+    <key name="Cecile" value="8" />
+    <key name="Chris" value="0" />
+    <key name="Ian" value="0" />
+    <key name="Sandra" value="0" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: b20d52e4-9996-432d-9449-f0444a59886c
+
+----field----
+field: {A26FC256-1DB0-44AA-BA3D-1C830BF882A2}
+name: Name
+key: name
+content-length: 6
+
+Cecile
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20191020T182957Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b20d52e4-9996-432d-9449-f0444a59886c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20191020T184741Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

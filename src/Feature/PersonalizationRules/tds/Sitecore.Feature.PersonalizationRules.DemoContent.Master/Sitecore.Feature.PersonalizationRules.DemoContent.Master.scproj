@@ -44,7 +44,7 @@
   <ItemGroup>
     <SitecoreItem Include="sitecore\content.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -64,18 +64,54 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel.item">
+      <ItemDeployment>NeverDeploy</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles.item">
+      <ItemDeployment>NeverDeploy</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Persona.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Persona\Pattern Cards.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Persona\Pattern Cards\Cecile.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Persona\Pattern Cards\Chris.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Persona\Profile Cards.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Persona\Profile Cards\Cecile.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Persona\Profile Cards\Chris.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings.item">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Analytics.item">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Analytics\Rules.item">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>NeverDeploy</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Analytics\Rules\Process Item.item">
@@ -88,6 +124,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Analytics\Rules\Process Item\Rules\Electronics.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
